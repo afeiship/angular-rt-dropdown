@@ -37,7 +37,7 @@
   color: #fff;
 }
 
-.nx-widget-rt-dropdown .nx-item + .item {
+.nx-widget-rt-dropdown .nx-item + .nx-item {
   border-top: 1px solid #4c4c4c;
 }
 
