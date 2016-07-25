@@ -20,7 +20,7 @@
         },
         template: '<div data-visible="{{visible}}" class="nx-widget-rt-dropdown {{cssClass}}">' +
         '<ul>'+
-        '<li ng-repeat="item in items" class="item" ng-click="itemClick()(item)">{{item.text}}</li>'+
+        '<li ng-repeat="item in items" class="nx-item" ng-click="itemClick()(item)">{{item.text}}</li>'+
         '</ul>'+
         '<b class="arrow">◆</b>'+
         '</div>'

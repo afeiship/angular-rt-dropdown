@@ -29,7 +29,7 @@
   z-index: -1;
 }
 
-.nx-widget-rt-dropdown .item {
+.nx-widget-rt-dropdown .nx-item {
   cursor: pointer;
   height: 32px;
   line-height: 32px;
@@ -37,11 +37,11 @@
   color: #fff;
 }
 
-.nx-widget-rt-dropdown .item + .item {
+.nx-widget-rt-dropdown .nx-item + .item {
   border-top: 1px solid #4c4c4c;
 }
 
-.nx-widget-rt-dropdown .item:active {
+.nx-widget-rt-dropdown .nx-item:active {
   background: black;
 }
 
