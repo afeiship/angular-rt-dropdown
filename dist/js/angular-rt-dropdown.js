@@ -1,6 +1,13 @@
 (function () {
   'use strict';
 
+  angular.module('nx.widget', []);
+
+})();
+
+(function () {
+  'use strict';
+
   angular.module('nx.widget')
     .directive('nxRtDropdown', [function () {
       return {

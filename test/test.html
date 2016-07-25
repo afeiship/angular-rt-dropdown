@@ -15,18 +15,39 @@
     [ng-cloak] {
       display: none;
     }
+    .test-dropdown{}
   </style>
 </head>
 <body ng-controller="MainCtrl as vm" ng-cloak>
 
-
+<nx-rt-dropdown visible="true" items="vm.items" item-click="vm.itemClick()" css-class="test-dropdown"></nx-rt-dropdown>
 
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../bower_components/angular-module-stiffener/dist/angular-module-stiffener.js"></script>
 <script type="text/javascript" src="../dist/js/angular-rt-dropdown.js"></script>
 <script type="text/javascript">
   var TestModule = angular.module('TestApp', ['nx.widget'])
     .controller('MainCtrl', function ($scope) {
       var vm = this;
+      vm.itemClick=function(){
+        return function(inItem){
+          console.log('item click:',inItem);
+        }
+      };
+      vm.items=[
+        {
+          text:'Option1'
+        },
+        {
+          text:'Option2'
+        },
+        {
+          text:'Option3'
+        },
+        {
+          text:'Option4'
+        }
+      ];
       //You directive demo code goes here!
     });
 </script>

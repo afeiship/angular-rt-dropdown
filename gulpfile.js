@@ -27,8 +27,7 @@ var config = {
 
 var scripts = [
   './src/angular/main.js',
-  './src/angular/directive/rt-dropdown.js',
-  './src/angular/service/rt-dropdown.js'
+  './src/angular/directive/rt-dropdown.js'
 ];
 
 

@@ -1,0 +1,56 @@
+/**rt-dropdown Start**/
+.nx-widget-rt-dropdown {
+  position: absolute;
+  min-width: 120px;
+  background: #262626;
+  border-radius: 3px;
+  right: 10px;
+  top: 10px;
+  transition: all 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.nx-widget-rt-dropdown ul, .nx-widget-rt-dropdown li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nx-widget-rt-dropdown[data-visible=true] {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.nx-widget-rt-dropdown[data-visible=false] {
+  opacity: 0;
+  z-index: -1;
+}
+
+.nx-widget-rt-dropdown .item {
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.nx-widget-rt-dropdown .item + .item {
+  border-top: 1px solid #4c4c4c;
+}
+
+.nx-widget-rt-dropdown .item:active {
+  background: black;
+}
+
+.nx-widget-rt-dropdown .arrow {
+  color: #262626;
+  position: absolute;
+  right: 10px;
+  top: -8px;
+  font-size: 20px;
+}
+
+/**rt-dropdown  End**/

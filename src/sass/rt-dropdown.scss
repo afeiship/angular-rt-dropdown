@@ -1,6 +1,54 @@
 /**rt-dropdown Start**/
 
 .nx-widget-rt-dropdown {
+  position: absolute;
+  min-width:120px;
+  background: #262626;
+  border-radius: 3px;
+  right:10px;
+  top:10px;
+  transition: all 0.3s;
+  user-select:none;
+
+  ul,li{
+    padding:0;margin:0;
+    list-style: none;
+  }
+
+
+
+  &[data-visible=true]{
+    opacity:1;
+    z-index:1000;
+  }
+  &[data-visible=false]{
+    opacity:0;
+    z-index:-1;
+  }
+
+  .item{
+    cursor: pointer;
+    height:32px;
+    line-height: 32px;
+    padding:0 10px;
+    color:#fff;
+    & + .item{
+      border-top:1px solid #4c4c4c;
+    }
+
+
+    &:active{
+      background: darken(#262626,30%);
+    }
+  }
+
+  .arrow{
+    color:#262626;
+    position: absolute;
+    right:10px;
+    top:-8px;
+    font-size:20px;
+  }
 }
 
 /**rt-dropdown  End**/
