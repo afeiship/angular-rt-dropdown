@@ -20,7 +20,7 @@
 </head>
 <body ng-controller="MainCtrl as vm" ng-cloak>
 
-<nx-rt-dropdown visible="true" items="vm.items" item-click="vm.itemClick()" css-class="test-dropdown"></nx-rt-dropdown>
+<nx-rt-dropdown visible="{{vm.visible}}" items="vm.items" item-click="vm.itemClick()" css-class="test-dropdown"></nx-rt-dropdown>
 
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="../bower_components/angular-module-stiffener/dist/angular-module-stiffener.js"></script>
@@ -29,9 +29,11 @@
   var TestModule = angular.module('TestApp', ['nx.widget'])
     .controller('MainCtrl', function ($scope) {
       var vm = this;
+      vm.visible=true;
       vm.itemClick=function(){
         return function(inItem){
           console.log('item click:',inItem);
+          vm.visible=false;
         }
       };
       vm.items=[
