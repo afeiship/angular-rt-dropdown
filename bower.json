@@ -1,0 +1,28 @@
+{
+  "name": "angular-rt-dropdown",
+  "description": "AngularJS directive for right top popup dropdown menu.",
+  "main": [
+    "dist/css/angular-rt-dropdown.css",
+    "dist/js/angular-rt-dropdown.js"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": ["angualar","dropdown","popup"],
+  "homepage": "https://github.com/afeiship/angular-rt-dropdown",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}
